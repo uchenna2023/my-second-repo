@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const Main = () => {
   return (
-    <main>Main</main>
+    <main className='main'>Main</main>
   )
 }
 

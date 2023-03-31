@@ -1,44 +1,44 @@
 import React from 'react'
-import Logo from '../Assets/Logo.svg'
+import { Container } from './styles/Container.styled'
+import { StyleFooter } from './styles/Footer.styled'
+import { Flex } from './styles/Flex.styled'
+import { FooterUList } from './styles/Footer.styled'
+import little_logo from '../Assets/little_logo.svg'
+
 
 const Footer = () => {
   return (
-    <footer>
-        <img src={Logo} alt=''/>
-        <div>
-            <div>
-                <h6>Doormart</h6>
-                <p><a href='#'>Home</a></p>
-                <p><a href='#'>Menu</a></p>
-                <p><a href='#'>About</a></p>
-                <p><a href='#'>Reservation</a></p>
-                <p><a href='#'>Login</a></p>
-                <p><a href='#'>Order online</a></p>
-
-
-            </div>
-            <div>
-            <h6>Doormart</h6>
-                <p><a href='#'>Home</a></p>
-                <p><a href='#'>Menu</a></p>
-                <p><a href='#'>About</a></p>
-                <p><a href='#'>Reservation</a></p>
-                <p>Login</p>
-                <p><a href='#'>Order online</a></p>
-
-            </div>
-            <div>
-            <h6>Doormart</h6>
-                <p><a href='#'>Home</a></p>
-                <p><a href='#'>Menu</a></p>
-                <p><a href='#'>About</a></p>
-                <p><a href='#'>Reservation</a></p>
-                <p><a href='#'>Login</a></p>
-                <p><a href='#'>Order online</a></p>
-
-            </div>
-        </div>
-    </footer>
+    <StyleFooter>
+        <Container>
+            <Flex>
+                    <img src={little_logo} alt=''/>
+                <div>
+                    <FooterUList>
+                        <li>list</li>
+                        <li>lisy</li>
+                        <li>list</li>
+                        <li>list</li>
+                    </FooterUList>
+                </div>
+                <div>
+                    <FooterUList>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>omw</li>
+                        <li>home</li>
+                    </FooterUList>
+                </div>
+                    <div>
+                        <FooterUList>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                            <li>about</li>
+                        </FooterUList>
+                    </div>
+            </Flex>
+        </Container>
+    </StyleFooter>
   )
 }
 
