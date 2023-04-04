@@ -10,9 +10,12 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: #fff;
-        font-size: 1.5rem;
         font-family: 'Karla', sans-serif;
         margin: 0;
+    }
+
+    html {
+        
     }
 
     img {

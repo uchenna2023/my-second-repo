@@ -17,6 +17,17 @@ export const FooterUList = styled.ul`
         padding-left: 20px;
     }
 
+    li > div {
+        background-color: #fff;
+        width: 100%;
+        display:flex;
+        
+
+        img {
+            width: 20px;
+        }
+    }
+
    
 
 `

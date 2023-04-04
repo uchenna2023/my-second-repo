@@ -4,17 +4,20 @@ import { StyleFooter } from './styles/Footer.styled'
 import { Flex } from './styles/Flex.styled'
 import { FooterUList } from './styles/Footer.styled'
 import little_logo from '../Assets/little_logo.svg'
+import hamburger from '../Assets/hamburger.svg'
 
 
 const Footer = () => {
   return (
     <StyleFooter>
         <Container>
-            <Flex>
+            <Flex padding='10px'>
+                <div>
                     <img src={little_logo} alt=''/>
+                </div>
                 <div>
                     <FooterUList>
-                        <li>list</li>
+                        <li>List</li>
                         <li>lisy</li>
                         <li>list</li>
                         <li>list</li>
