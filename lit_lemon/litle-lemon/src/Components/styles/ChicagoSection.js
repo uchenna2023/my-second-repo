@@ -10,7 +10,6 @@ const ChicagoSection = () => {
   return (
     <StyledChicago>
         <ChicagoContainer>
-            {/*<RecShape position='none'/>*/}
             <div>
                 <h2>Little Lemon</h2>
                 <h3>Chicago</h3>
