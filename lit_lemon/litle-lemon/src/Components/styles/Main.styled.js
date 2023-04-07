@@ -53,7 +53,7 @@ export const StyledSection = styled.section`
         
         & h1 {
             color:#F4CE14;
-            padding-left: 20px;
+            padding-left: 40px;
             padding-top: 10px;
             padding-buttom: 0;
             border: solid black 1px;
@@ -64,6 +64,7 @@ export const StyledSection = styled.section`
 
     }
 `
+
 
 export const Button = styled.button`
     background-color: #F4CE14;
@@ -77,7 +78,7 @@ export const Button = styled.button`
     align-self: start;
 
     @media (max-width: ${({theme})=>theme.mobile}){
-        margin: 20px;
+        margin-left: 40px;
 
     }
 
@@ -94,13 +95,7 @@ export const HeroFlex =styled.div`
 
 
 
-    & > h2 {
-        color:#F4CE14;
-        font-family: markazi;
-        font-weight: 700;
-        margin:0;
-        padding:20px 0;
-    }
+    
 
     & > p {
         font-family: karla;
@@ -160,3 +155,211 @@ export const HeroFlex =styled.div`
 
     }
 `
+
+export const StyledProduct = styled.section`
+    background-color: ${({bg})=>bg};
+    
+    & h3 {
+        padding-left: 20px;
+    }
+`
+
+export const FlexProduct = styled.div`
+    display:none;
+
+    @media (max-width: ${({theme})=>theme.mobile}){
+        display: ${(fd)=> fd};
+        justify-content: space-evenly;
+
+        &  div {
+        padding: 10px;
+        border-radius: 16px;
+        background-color: #D9D9D9;
+        margin: 10px;
+
+
+        }
+    }
+`
+
+
+
+export const HFlex = styled.div`
+    display:none;
+
+   
+
+
+
+
+    @media (max-width: ${({theme})=>theme.mobile}){
+        display:flex;
+        flex-direction: row;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        border: solid yellow 1px;
+
+        & > div {
+            flex:1;
+            padding:0px 20px;
+        }
+
+
+    }
+    
+
+`
+
+export const OnlineFlex = styled.div`
+    display: flex;
+    margin-top:${({mg})=>mg};
+    border: solid gray 1px;
+    justify-content: space-around;
+    align-items: center;
+
+    & > h3,
+    & > button {
+        
+    }
+
+    @media (max-width: ${({theme})=>theme.mobile}){
+        display:none;
+
+    }
+`
+
+export const OnlineHFlex = styled.div`
+    display:flex;
+    padding: 10px 40px;
+
+    & > div {
+        margin: 20px;
+    }
+`
+
+export const OnlineVFlex = styled.div`
+    display:flex;
+    flex-direction:column;
+    width: 245px;
+    background-color:#D9D9D9;
+    border-radius: 16px;
+
+    & > div > img {
+        border-radius: 16px;
+        border: solid black 1px;
+    }
+    & > p, h5 {
+        align-self: center;
+        padding: 0 10px;
+        font-size: 14px;
+        
+    }
+
+    & > h5 {
+        font-weight: 600;
+    }
+
+`
+
+export const StyledTestimony = styled.section`
+    background-color: #495E57;
+
+    & > h3 {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 2rem;
+        font-family:karla;
+        color:#fff;
+    }
+
+    @media (max-width: ${({theme})=>theme.mobile}){
+        display:none;
+
+    }
+`
+
+export const TestimonyFlex = styled.div`
+    display:flex;
+    justify-content: space-evenly;
+    padding:50px;
+
+`
+
+export const TestimonyContaine = styled.div`
+    background-color: #fff;
+    width: 180px;
+
+
+`
+
+export const ChicagoContainer = styled.div`
+    background-color: #fff;
+    border:solid black 5px;
+    width:100%;
+    
+    display: flex;
+
+    & > div {
+        flex: 1;
+    }
+
+
+    & > div:nth-child(2) {
+        width: 300px;
+        height: 500px;
+        border: solid pink 5px;
+        position:relative;
+
+    }
+
+    & > div:nth-child(1) {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > h2 {
+            color:#F4CE14;
+            font-family: karla;
+            font-size: 2rem;
+            align-self: start;
+            padding-left:98px;
+        }
+
+        & > h3 {
+            font-family: karla;
+            font-size: 1.5rem;
+            align-self: start;
+            padding-left:98px;
+            color: #495E57;
+        }
+
+    }
+
+`
+
+export const StyledChicago = styled.div`
+    width:100%;
+    border: solid yellow 2px;
+
+    @media (max-width: ${({theme})=>theme.mobile}){
+        display:none;
+
+    }
+
+
+`
+
+export const ImageTwo = styled.img`
+    width: 40%;
+    height: 30%;
+    z-index:4;
+    position:absolute;
+    top: 230px;
+    right:240px;
+    border: solid #fff 4px;
+
+`
+

@@ -1,17 +1,16 @@
 import React from 'react'
 import { Container } from './styles/Container.styled'
 import { StyleFooter } from './styles/Footer.styled'
-import { Flex } from './styles/Flex.styled'
 import { FooterUList } from './styles/Footer.styled'
 import little_logo from '../Assets/little_logo.svg'
-import hamburger from '../Assets/hamburger.svg'
+import { VFlex } from './styles/Flex.styled'
 
 
 const Footer = () => {
   return (
     <StyleFooter>
         <Container>
-            <Flex padding='10px'>
+            <VFlex padding='10px'>
                 <div>
                     <img src={little_logo} alt=''/>
                 </div>
@@ -39,7 +38,7 @@ const Footer = () => {
                             <li>about</li>
                         </FooterUList>
                     </div>
-            </Flex>
+            </VFlex>
         </Container>
     </StyleFooter>
   )

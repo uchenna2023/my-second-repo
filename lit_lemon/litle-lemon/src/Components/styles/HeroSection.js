@@ -2,14 +2,12 @@ import React from 'react'
 import { HeroFlex, StyledSection } from './Main.styled'
 import { Flex } from './Flex.styled'
 import { Button } from './Main.styled'
-import { Container } from './Container.styled'
 import restauranfood from '../../Assets/restauranfood.jpg'
 
 const HeroSection = () => {
   return (
     <StyledSection bg='#495E57'>
       <h1>Little Lemon</h1>
-      <h2>Chicago</h2>
         <Flex padding='0px'>
             <HeroFlex>
                 <h1>Little Lemon</h1>

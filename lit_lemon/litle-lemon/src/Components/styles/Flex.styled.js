@@ -38,14 +38,47 @@ export const Flex = styled.div`
 
     @media (max-width: ${({theme})=>theme.mobile}){
         display: flex;
-        padding: 0px 10px;
+        padding: 0px 40px;
         justify-contents: flex-start;
         align-items: center;
         width:100%;
 
-        img {
-            width: 150px;
+        & img {
+            width: 100px;
+            padding: 10px;
         }
+
+        & > div > h5, p {
+            margin: 0px;
+            align-self: start;
+        }
+
+      
+
     }
+
+`
+export const VFlex = styled.div`
+    
+    @media (max-width: ${({theme})=>theme.mobile})
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border: solid green 1px;
+
+    & > h5, p {
+        margin: 0px;
+    }
+
+    & > p {
+        font-size: 14px;
+    }
+
+    & > img {
+        padding: 0px;
+        width: 125px;
+    }
+
 
 `
