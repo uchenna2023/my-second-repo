@@ -1,8 +1,8 @@
 import React from 'react'
 import { ChicagoContainer,StyledChicago, ImageTwo } from './Main.styled'
 import { RecShape, CirShape, ImageOne, } from './Shapes.styled'
-import M_A_2 from '../../Assets/M_A_2.jpg'
-import chef_B from '../../Assets/chef_B.jpg'
+import restauranfood from '../../Assets/restauranfood.jpg'
+import greek from '../../Assets/greek.jpg'
 
 
 
@@ -18,8 +18,8 @@ const ChicagoSection = () => {
             <div>
                 <RecShape position='absolute'/>
                 <CirShape />
-                <ImageOne src={M_A_2} alt='' />
-                <ImageTwo src={chef_B} alt='' />
+                <ImageOne src={restauranfood} alt='' />
+                <ImageTwo src={greek} alt='' />
             </div>
         </ChicagoContainer>
     </StyledChicago>
