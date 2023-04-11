@@ -12,7 +12,7 @@ import ChicagoSection from './styles/ChicagoSection'
 const Main = () => {
   return (
     <StyledMain>
-      <Container>
+      <Container color='#fff'>
       <HeroSection />
       <ProductSection />
       <TestimonySection />

@@ -1,46 +1,31 @@
 import React from 'react'
-import { Container } from './styles/Container.styled'
-import { StyleFooter } from './styles/Footer.styled'
-import { FooterUList } from './styles/Footer.styled'
+import { StyledFooter } from './styles/Footer.styled'
+import { FooterHFlex, FooterVFlex } from './styles/Footer.styled'
 import little_logo from '../Assets/little_logo.svg'
-import { VFlex } from './styles/Flex.styled'
+
 
 
 const Footer = () => {
   return (
-    <StyleFooter>
-        <Container>
-            <VFlex padding='10px'>
+    <StyledFooter>
+        <FooterHFlex>
+            <FooterVFlex>
                 <div>
                     <img src={little_logo} alt=''/>
                 </div>
-                <div>
-                    <FooterUList>
-                        <li>List</li>
-                        <li>lisy</li>
-                        <li>list</li>
-                        <li>list</li>
-                    </FooterUList>
-                </div>
-                <div>
-                    <FooterUList>
-                        <li>Home</li>
-                        <li>Home</li>
-                        <li>omw</li>
-                        <li>home</li>
-                    </FooterUList>
-                </div>
-                    <div>
-                        <FooterUList>
-                            <li>about</li>
-                            <li>about</li>
-                            <li>about</li>
-                            <li>about</li>
-                        </FooterUList>
-                    </div>
-            </VFlex>
-        </Container>
-    </StyleFooter>
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 2</li>
+                </ul>
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 2</li>
+                </ul>
+            </FooterVFlex>
+        </FooterHFlex>
+    </StyledFooter>
   )
 }
 

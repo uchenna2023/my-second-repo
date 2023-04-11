@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyleHeader = styled.header`
     background-color: ${({theme})=>theme.colors.header};
     width: 100%;
-    border: solid black 1px;
 
 `
 
@@ -26,6 +25,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 0;
 
     @media (max-width: ${({theme})=>theme.mobile}) {
         

@@ -5,8 +5,7 @@ export const Flex = styled.div`
     display: flex;
     align-item: center;
     padding: 0px 20px;
-    width:100%;
-    border:solid green 1px;
+    width:100;
 
 
     & > div,
@@ -62,10 +61,8 @@ export const VFlex = styled.div`
     
     @media (max-width: ${({theme})=>theme.mobile})
     display: flex;
-    flex-direction: column;
     justify-content:center;
     align-items: center;
-    border: solid green 1px;
 
     & > h5, p {
         margin: 0px;

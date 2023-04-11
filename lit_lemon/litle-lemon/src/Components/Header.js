@@ -8,7 +8,6 @@ import hamburger from '../Assets/hamburger.svg'
 const Header = () => {
   return (
     <StyleHeader>
-      <Container>
         <Nav>
           <Logo src={little_logo} alt=''/>
           <UList>
@@ -20,7 +19,6 @@ const Header = () => {
           </UList>
           <Hamburger src={hamburger} alt='' />
         </Nav>
-      </Container>
     </StyleHeader>
   )
 }

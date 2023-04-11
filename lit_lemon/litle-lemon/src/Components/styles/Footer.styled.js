@@ -1,33 +1,48 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
+export const StyledFooter = styled.footer`
+    background-color: #495E57
 
-export const StyleFooter = styled.footer`
-    width: 100%;
-    background-color: #495E57;
-    ;
 `
-export const FooterUList = styled.ul`
-    list-style: none;
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
 
-    li {
-        font-size: 14px;
-        padding-left: 20px;
+export const FooterHFlex = styled.div`
+    width:100%;
+    border: solid white 1px;
+`
+
+export const FooterVFlex = styled.div`
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid #fff 1px;
+    width:100%;
+    padding: 30px;
+
+    & > ul {
+        list-style:none;
     }
 
-    li > div {
-        background-color: #fff;
-        width: 100%;
-        display:flex;
+    & > div {
+        width: 140px;
+        height: 60px;
+        border: solid black 1px;
+        background-color:#fff;
+    }
+
+    & > div > img {
+        width:120px;
+        height:60px;
         
 
-        img {
-            width: 20px;
-        }
     }
 
-   
+
+    @media(max-width: ${({theme})=>theme.mobile}) {
+
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+    }
+
 
 `

@@ -11,7 +11,6 @@ export const StyledSection = styled.section`
         padding-left: 20px;
         padding-top: 10px;
         padding-buttom: 0;
-        border: solid black 1px;
         font-size: 2rem;
         font-family: karla;
         display:none;
@@ -22,7 +21,6 @@ export const StyledSection = styled.section`
         padding-left: 20px;
         padding-top: 0px;
         margin-top: -30px;
-        border: solid black 1px;
         font-size: 1.5rem;
         font-family: karla;
         display:none;
@@ -74,7 +72,7 @@ export const Button = styled.button`
     font-size: 100%;
     font-family: karla;
     font-weight: 700;
-    padding: 10px;
+    padding: 10px 60px;
     align-self: start;
 
     @media (max-width: ${({theme})=>theme.mobile}){
@@ -91,7 +89,6 @@ export const HeroFlex =styled.div`
     padding: 20px 40px;
     max-width:100%;
     flex-shrink:1;
-    border: solid pink 1px;
 
 
 
@@ -199,7 +196,6 @@ export const HFlex = styled.div`
         align-items: center;
         justify-content: center;
         padding: 20px 0;
-        border: solid yellow 1px;
 
         & > div {
             flex:1;
@@ -215,7 +211,6 @@ export const HFlex = styled.div`
 export const OnlineFlex = styled.div`
     display: flex;
     margin-top:${({mg})=>mg};
-    border: solid gray 1px;
     justify-content: space-around;
     align-items: center;
 
@@ -296,7 +291,6 @@ export const TestimonyContaine = styled.div`
 
 export const ChicagoContainer = styled.div`
     background-color: #fff;
-    border:solid black 5px;
     width:100%;
     
     display: flex;
@@ -309,7 +303,6 @@ export const ChicagoContainer = styled.div`
     & > div:nth-child(2) {
         width: 300px;
         height: 500px;
-        border: solid pink 5px;
         position:relative;
 
     }
@@ -342,7 +335,6 @@ export const ChicagoContainer = styled.div`
 
 export const StyledChicago = styled.div`
     width:100%;
-    border: solid yellow 2px;
 
     @media (max-width: ${({theme})=>theme.mobile}){
         display:none;
