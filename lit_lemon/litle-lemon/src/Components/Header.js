@@ -3,6 +3,7 @@ import { StyleHeader, UList, Nav, Logo, Hamburger } from './styles/Header.styled
 import { Container } from './styles/Container.styled';
 import little_logo from '../Assets/little_logo.svg'
 import hamburger from '../Assets/hamburger.svg'
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -11,9 +12,9 @@ const Header = () => {
         <Nav>
           <Logo src={little_logo} alt=''/>
           <UList>
-            <li>Home</li>
+            <li><Link to='/'>Home</Link></li>
             <li>Menu</li>
-            <li>Reservation</li>
+            <li><Link to='reservation'>Reservation</Link></li>
             <li>Online order</li>
             <li>Login</li>
           </UList>

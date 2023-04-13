@@ -5,6 +5,7 @@ import Main from './Components/Main';
 import { Container } from './Components/styles/Container.styled';
 import GlobalStyle from './Components/styles/Global';
 import Footer from './Components/Footer'
+import { ChakraProvider } from '@chakra-ui/react';
 
 const theme = {
   colors: {
@@ -19,7 +20,8 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ChakraProvider>
+      <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
         <Container color='#495E57'>
@@ -29,6 +31,7 @@ function App() {
         </Container>
       </>
     </ThemeProvider>
+    </ChakraProvider>
   );
 }
 

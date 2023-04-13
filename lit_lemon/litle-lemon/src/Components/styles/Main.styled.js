@@ -5,6 +5,7 @@ export const StyledMain = styled.main`
 
 export const StyledSection = styled.section`
     background-color: ${({bg})=>bg};
+    height: 300px;
     
     & h1 {
         color:#F4CE14;
@@ -23,7 +24,6 @@ export const StyledSection = styled.section`
         margin-top: -30px;
         font-size: 1.5rem;
         font-family: karla;
-        display:none;
     }
 
     & > button {
@@ -213,6 +213,7 @@ export const OnlineFlex = styled.div`
     margin-top:${({mg})=>mg};
     justify-content: space-around;
     align-items: center;
+    border: solid black 2px;
 
     & > h3,
     & > button {
@@ -240,10 +241,11 @@ export const OnlineVFlex = styled.div`
     width: 245px;
     background-color:#D9D9D9;
     border-radius: 16px;
+    border: solid red 2px;
+    height: 300px;
 
     & > div > img {
         border-radius: 16px;
-        border: solid black 1px;
     }
     & > p, h5 {
         align-self: center;
@@ -354,4 +356,6 @@ export const ImageTwo = styled.img`
     border: solid #fff 4px;
 
 `
+
+
 
