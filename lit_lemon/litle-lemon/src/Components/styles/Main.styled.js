@@ -240,7 +240,7 @@ export const OnlineVFlex = styled.div`
     flex-direction:column;
     width: 245px;
     background-color:#D9D9D9;
-    border-radius: 16px;
+    border-radius: 24px;
     border: solid red 2px;
     height: 300px;
 
