@@ -16,7 +16,8 @@ const Header = () => {
             <li>Menu</li>
             <li><Link to='reservation'>Reservation</Link></li>
             <li>Online order</li>
-            <li>Login</li>
+            <li><Link to='login_page'>Login</Link></li>
+            <li><Link to='register'>Register</Link></li>
           </UList>
           <Hamburger src={hamburger} alt='' />
         </Nav>

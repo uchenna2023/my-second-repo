@@ -7,13 +7,14 @@ import TestimonySection from './styles/TestimonySection'
 import ChicagoSection from './styles/ChicagoSection'
 
 const HomePage = () => {
+
   return (
     <StyledMain>
       <Container color='#fff'>
-      <HeroSection />
-      <ProductSection />
-      <TestimonySection />
-      <ChicagoSection />
+        <HeroSection />
+        <ProductSection />
+        <TestimonySection />
+        <ChicagoSection />
       </Container>
     </StyledMain>
   )
